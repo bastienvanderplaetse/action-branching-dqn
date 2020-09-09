@@ -1,0 +1,35 @@
+{
+  "environment": {
+    "env_name": "BipedalWalker-v3",
+    "env_class": "BranchingEnv",
+    "action_bins": 6
+  },
+  "exploration": {
+    "epsilon_start": 1,
+    "epsilon_final": 0.01,
+    "epsilon_decay": 8000
+  },
+  "training": {
+    "target_update_freq": 1000,
+    "start_learning": 5000,
+    "learning_rate": 1e-4,
+    "max_steps": 10000000,
+    "max_episodes": 700,
+    "seed": 20200908
+  },
+  "memory_replay": {
+    "capacity": 100000,
+    "batch_size": 128
+  },
+  "model": {
+    "temporal_difference_target": "individual",
+    "gamma": 0.99,
+    "hidden_dim": 128
+  },
+  "output": {
+    "save_update_freq": 1000,
+    "directory": "Individual",
+    "dpi": 72
+  },
+  "device": "cuda:0"
+}
