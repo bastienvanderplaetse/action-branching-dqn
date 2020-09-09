@@ -6,7 +6,17 @@ This repository proposes a PyTorch implementation of the Branching Dueling Q-Net
 
 ## Installation
 
-TO DO
+- Start by cloning this repository.
+- This project uses Python 3.7 and the following packages:
+```bash
+torch==1.6.0
+torchvision==0.7.0
+tensorboard==2.3.0
+numpy==1.18.5
+pandas==1.1.1
+matplotlib==3.3.1
+gym==0.17.2
+```
 
 ## Use
 
